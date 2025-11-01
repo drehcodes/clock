@@ -46,7 +46,7 @@ body {
   border: 20px solid transparent;
   background: linear-gradient(var(--violet-200), var(--violet-100)) padding-box,
       linear-gradient(120deg, var(--violet-100) 13%, var(--neutral-500) 84%) border-box;
-  box-shadow: rgba(0, 0, 0, 0.25) 40px 74px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px, rgba(0, 0, 0, 0.09) 0px 0px 10px 10px inset;;
+  box-shadow: rgba(0, 0, 0, 0.25) 40px 74px 55px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px 0px 10px 10px inset;;
   width: 30rem;
   height: 30rem;
 }
