@@ -56,7 +56,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  /* transform: translateY(-3px); */
 }
 
 .hand {
@@ -65,8 +64,32 @@ body {
   height: 50%;
   bottom: 50%;
   left: 50%;
-  background: var(--violet-900);
+  background: linear-gradient(var(--violet-300), var(--violet-500));
+  border-radius: 1rem;
   transform-origin: 50% 100%;
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hand.hour-hand {
+  width: 1rem;
+  height: 35%;
+}
+
+.hand.min-hand {
+  width: 1rem;
+  height: 50%;
+}
+
+.hand-face {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 45%;
+  left: 45%;
+  border: 1px solid transparent;
+  background: linear-gradient(var(--violet-200), var(--violet-100)) padding-box,
+      linear-gradient(120deg, var(--violet-100) 13%, var(--neutral-500) 84%) border-box;
+  border-radius: 50%;
+  z-index: 1;
 }
