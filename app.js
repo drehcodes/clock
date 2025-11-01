@@ -20,10 +20,11 @@ function moveClockHands() {
   const currentTime = new Date();
   const seconds = currentTime.getSeconds();
   const minutes = currentTime.getMinutes();
+  const hours = currentTime.getHours();
 
   const secDegrees = ((seconds / 60) * 360);
-  const minDegrees = ((minutes / 60) * 360);
-  const hoursDegrees = ((minutes / 12) * 360);
+  const minDegrees = ((minutes / 60) * 360) + ((seconds / 60) * 6);
+  const hoursDegrees = ((hours / 12) * 360) + ((minutes / 60) * 30);
 
   secHand.style.transform = `rotate(${secDegrees}deg)`;
   minHand.style.transform = `rotate(${minDegrees}deg)`;
