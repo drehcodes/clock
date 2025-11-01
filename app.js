@@ -1,17 +1,20 @@
 const secHand = document.querySelector('.sec-hand');
+const minHand = document.querySelector('.min-hand');
+const hourHand = document.querySelector('.hour-hand');
 
 function handleTime() {
-  setInterval(moveClockHands, 250)
+  setInterval(moveClockHands, 1000)
 }
 
 function moveClockHands() {
-  // seconds, so the sechand class should rotate everysecond 1degree?
-  //first get the seconds time
-  //seconds go every second
   const currentTime = new Date();
-  secondsRotation = currentTime.getSeconds();
-  secHand.style.transform = `rotate(${secondsRotation * 6}deg)`;
-  console.log(currentTime.getSeconds());
+  const seconds = currentTime.getSeconds();
+  const minutes = currentTime.getMinutes();
+  const hours = currentTime.getHours();
+
+  secHand.style.transform = `rotate(${seconds * 6}deg)`;
+  minHand.style.transform = `rotate(${minutes * 6}deg)`;
+  hourHand.style.transform = `rotate(${hours * 6}deg)`;
 }
 
 handleTime();
