@@ -49,7 +49,8 @@ body {
   border: 20px solid transparent;
   background: linear-gradient(var(--violet-200), var(--violet-100)) padding-box,
       linear-gradient(120deg, var(--violet-100) 13%, var(--neutral-500) 84%) border-box;
-  box-shadow: rgba(0, 0, 0, 0.25) 40px 74px 55px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px 0px 10px 10px inset;;
+  box-shadow: rgba(21, 14, 53, .01) 90px 91px 36px, rgba(21, 14, 53, .06) 58px 58px 33px, rgba(21, 14, 53, .20) 32px 33px 28px, rgba(21, 14, 53, .34) 14px 15px 21px, rgba(21, 14, 53, .40) 4px 4px 11px, var(--violet-900) 0px 0px 16px inset; 
+  /*[color] [offset-x] [offset-y] [blur-radius] [spread-radius?] [inset?]*/
 }
 
 .clock-face {
