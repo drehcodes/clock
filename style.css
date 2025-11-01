@@ -36,7 +36,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(-45deg, var(--violet-100) 0%, var(--neutral-200) 67%, var(--violet-100) 100%);
+  background: var(--violet-100)
 }
 
 /* clock */
@@ -122,4 +122,15 @@ body {
   background: linear-gradient(var(--violet-100));
   box-shadow: rgba(34, 34, 35, 0.3) 4px 2px 8px;
   transform: translateY(-12px);
+}
+
+.shine {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background: linear-gradient(123deg, rgba(226, 219, 255, .5) 0%, rgba(226, 219, 255, 1) 50%, rgba(136, 132, 153, 0) 100%);
+  box-shadow: 0 0 10px var(--neutral-100);
+  filter: blur(50px);
+  mix-blend-mode: overlay;
+  z-index: 2;
 }
