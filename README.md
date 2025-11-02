@@ -13,3 +13,5 @@
 - HTML for structure
 - CSS (custom properties, gradients, shadows)
 - JavaScript for timekeeping & DOM generation
+
+![clockpreview](https://github.com/user-attachments/assets/2f7034f0-bc12-4436-8e27-c0c9816b0d49)
